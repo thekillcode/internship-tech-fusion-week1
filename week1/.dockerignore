@@ -1,0 +1,10 @@
+__pycache__
+
+.env
+Dockerfile
+.dockerignore
+
+# dirs
+
+ui
+venv
