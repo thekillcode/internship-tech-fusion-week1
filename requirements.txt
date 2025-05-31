@@ -141,7 +141,7 @@ rich-toolkit==0.14.6
 rpds-py==0.22.3
 rsa==4.9.1
 Send2Trash==1.8.3
-setuptools==75.6.0
+setuptools==78.1.1
 shellingham==1.5.4
 simple-websocket==1.1.0
 six==1.17.0
