@@ -1,6 +1,5 @@
 import axios, { type AxiosRequestConfig, type AxiosResponse } from "axios"
 import Cookies from "js-cookie";
-import { getBaseUrl } from "./utils";
 
 
 export interface AxiosError<T = any> extends Error {
@@ -14,7 +13,7 @@ export interface AxiosError<T = any> extends Error {
 
 
 export const Api = axios.create({
-  baseURL: getBaseUrl(8000),
+  baseURL: "/",
   withCredentials: true,
 })
 
