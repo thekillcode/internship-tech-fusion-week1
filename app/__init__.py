@@ -6,7 +6,6 @@ from fastapi.security import HTTPBasic, HTTPBearer
 from fastapi.staticfiles import StaticFiles
 from .config import settings
 from .database import Base, engine
-from services.socket_service import socket_service
 import os
 # Import routes
 
@@ -49,7 +48,6 @@ app.add_middleware(
     allow_methods=settings.ALLOW_METHODS_LIST,
     allow_headers=settings.ALLOW_HEADERS_LIST,
 )
-app.mount('/socket.io', app=socket_service.app)
 
 
 

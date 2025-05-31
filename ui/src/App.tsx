@@ -6,11 +6,9 @@ import { useEffect } from 'react';
 import { Bounce, ToastContainer } from "react-toastify";
 import Loader from './components/custom/Loader';
 import { selectIsLoading } from './store/generalSlice';
-import { useSocket } from './hooks/useSocket';
 
 
 function App() {
-  useSocket();
   const dispatch = useAppDispatch()
   const isLoading = useAppSelector(selectIsLoading)
   useEffect(() => {
