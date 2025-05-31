@@ -1,0 +1,6 @@
+export { default as Header } from './Header'
+export { default as HeroSection } from './HeroSection'
+export { default as Footer } from './Footer'
+export { default as MoveToTop } from './MoveToTop'
+export { default as StatisticsSection } from './StatisticsSection'
+export { default as SubscriptionSection } from './SubscriptionSection'
