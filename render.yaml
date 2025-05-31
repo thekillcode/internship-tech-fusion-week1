@@ -5,5 +5,8 @@ services:
     runtime: python
     plan: free
     autoDeploy: false
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install --upgrade pip
+      pip install --upgrade tornado
+      pip install -r requirements.txt
     startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
