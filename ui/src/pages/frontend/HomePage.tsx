@@ -155,7 +155,7 @@ const HomePage = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
         <div>
-          <Badge variant="secondary" className="text-lg mb-2">Chef's Special</Badge>
+          <Badge variant="default" className="text-lg mb-2">Chef's Special</Badge>
           <h3 className="text-3xl font-bold text-white mb-2">Dragon Roll Sushi</h3>
           <p className="text-white mb-4">Our signature dish featuring fresh seafood, avocado, and special sauce.</p>
         </div>

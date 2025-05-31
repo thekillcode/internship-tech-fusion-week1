@@ -14,7 +14,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:'/public',
+  // base:'/public',
   build: {
     outDir: path.resolve(__dirname, "../public"),
     emptyOutDir: true, // This will empty the ../public directory before building

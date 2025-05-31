@@ -67,14 +67,6 @@ class Settings(BaseSettings):
     def ALLOW_HEADERS_LIST(self) -> list[str]:
         return [header.strip() for header in self.ALLOW_HEADERS.split(",") if header.strip()]
 
-    # WEB_SOCKET
-    WEBSOCKET_PATH: str = "/socket.io"
-    WEBSOCKET_CORS_ORIGINS: str = os.getenv(
-        "WEBSOCKET_CORS_ORIGINS", ALLOW_ORIGINS)
-
-    @property
-    def WEBSOCKET_CORS_ORIGINS_LIST(self) -> list[str]:
-        return [origin.strip() for origin in self.WEBSOCKET_CORS_ORIGINS.split(",") if origin.strip()]
 
     # MAIL_SMTP
     MAIL_USERNAME: str = os.getenv("MAIL_USERNAME")
