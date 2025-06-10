@@ -1,4 +1,5 @@
 import { Footer, Header, MoveToTop } from "@/pages/frontend/components";
+import Chatbot from "@/pages/frontend/components/Chatbot";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
@@ -8,6 +9,8 @@ const MainLayout = () => {
       <Outlet />
       <MoveToTop />
       <Footer />
+      <Chatbot />
+
     </div>
   );
 }

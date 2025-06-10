@@ -22,16 +22,14 @@ const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Scroll handler
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 170); // Change to fixed after 170px scroll
+      setIsScrolled(window.scrollY > 170);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close sheet when not mobile
   useEffect(() => {
     if (sheetOpen && !isMobile) {
       setSheetOpen(false);

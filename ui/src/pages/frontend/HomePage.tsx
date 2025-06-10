@@ -143,45 +143,44 @@ const HomePage = () => {
         </div>
       </div>
       <div className="w-full mx-auto max-w-5xl relative py-20">
-  <div className="mb-10">
-    <h4 className="font-bold text-3xl tracking-[10px]">Oriental Taste</h4>
-  </div>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <div className="relative rounded-3xl overflow-hidden shadow-2xl h-96">
-      <img 
-        src={dragon_role} 
-        alt="Special Oriental Dish"
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-        <div>
-          <Badge variant="default" className="text-lg mb-2">Chef's Special</Badge>
-          <h3 className="text-3xl font-bold text-white mb-2">Dragon Roll Sushi</h3>
-          <p className="text-white mb-4">Our signature dish featuring fresh seafood, avocado, and special sauce.</p>
+        <div className="mb-10">
+          <h4 className="font-bold text-3xl tracking-[10px]">Oriental Taste</h4>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl h-96">
+            <img
+              src={dragon_role}
+              alt="Special Oriental Dish"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+              <div>
+                <Badge variant="default" className="text-lg mb-2">Chef's Special</Badge>
+                <h3 className="text-3xl font-bold text-white mb-2">Dragon Roll Sushi</h3>
+                <p className="text-white mb-4">Our signature dish featuring fresh seafood, avocado, and special sauce.</p>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-6">
+            <h3 className="text-4xl font-bold tracking-wide">Experience Authentic Oriental Flavors</h3>
+            <p className="text-lg text-gray-600">
+              Indulge in our carefully crafted oriental dishes made with traditional recipes and the freshest ingredients.
+              Each bite takes you on a journey through the rich culinary heritage of the East.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Badge className="text-lg px-4 py-2 bg-custom-primary">$24.99</Badge>
+              <button className="px-8 py-3 dark:bg-white bg-black dark:text-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
+                Order Now
+              </button>
+              <button className="px-8 py-3 border-2 dark:border-white border-black rounded-full font-medium hover:bg-gray-100 hover:text-black transition-colors">
+                View Full Menu
+              </button>
+            </div>
+          </div>
+        </div>
+        <StatisticsSection />
+        <SubscriptionSection />
       </div>
-    </div>
-    <div className="space-y-6">
-      <h3 className="text-4xl font-bold tracking-wide">Experience Authentic Oriental Flavors</h3>
-      <p className="text-lg text-gray-600">
-        Indulge in our carefully crafted oriental dishes made with traditional recipes and the freshest ingredients. 
-        Each bite takes you on a journey through the rich culinary heritage of the East.
-      </p>
-      <div className="flex flex-wrap gap-4">
-        <Badge className="text-lg px-4 py-2 bg-custom-primary">$24.99</Badge>
-        <button className="px-8 py-3 dark:bg-white bg-black dark:text-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
-          Order Now
-        </button>
-        <button className="px-8 py-3 border-2 dark:border-white border-black rounded-full font-medium hover:bg-gray-100 hover:text-black transition-colors">
-          View Full Menu
-        </button>
-      </div>
-    </div>
-  </div>
-  <StatisticsSection />
-  <SubscriptionSection />
-</div>
-
     </main>
   );
 }

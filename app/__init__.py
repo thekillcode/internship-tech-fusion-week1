@@ -11,6 +11,7 @@ import os
 
 from auth.routes import router as auth_router
 from user.routes import router as user_router
+from chat.routes import router as chat_router
 # Create tables
 
 Base.metadata.create_all(bind=engine)
@@ -54,6 +55,7 @@ app.add_middleware(
 
 app.include_router(auth_router, prefix='/auth', tags=["Authentication"])
 app.include_router(user_router, prefix='/user', tags=["User"])
+app.include_router(chat_router, prefix='/chat', tags=["Chat"])
 
 
 @app.get("/{full_path:path}",include_in_schema=False)

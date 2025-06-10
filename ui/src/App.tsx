@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { Bounce, ToastContainer } from "react-toastify";
 import Loader from './components/custom/Loader';
 import { selectIsLoading } from './store/generalSlice';
-
+import { config } from './lib/config';
 
 function App() {
   const dispatch = useAppDispatch()
@@ -14,6 +14,8 @@ function App() {
   useEffect(() => {
     dispatch(initDarkMode());
   }, [dispatch]);
+  
+  console.log(config.apiUrl);
   
   
   return (
@@ -32,6 +34,7 @@ function App() {
         theme="dark"
         transition={Bounce}
       />
+      
       {isLoading && <Loader />}
     </BrowserRouter>
   )

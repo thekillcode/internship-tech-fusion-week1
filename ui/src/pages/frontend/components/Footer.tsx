@@ -8,8 +8,6 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-background pt-16 pb-8 px-4 sm:px-8 lg:px-16 border-t border-border">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        
-        {/* Brand Column */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-custom-primary flex items-center gap-2">
             <Utensils className="w-8 h-8" />
@@ -37,8 +35,6 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
-        {/* Quick Links */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold text-custom-primary flex items-center gap-2">
             <Home className="w-5 h-5" />
@@ -64,8 +60,6 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
-        {/* Contact Info */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold text-custom-primary flex items-center gap-2">
             <Mail className="w-5 h-5" />
@@ -86,8 +80,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* Newsletter */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold text-custom-primary">Newsletter</h3>
           <p className="text-muted-foreground">
@@ -109,8 +101,6 @@ const Footer = () => {
           </form>
         </div>
       </div>
-
-      {/* Copyright */}
       <div className="border-t border-border/50 mt-12 pt-8 text-center text-muted-foreground text-sm">
         <p>© {new Date().getFullYear()} Master Chief Restaurant. All rights reserved.</p>
       </div>
