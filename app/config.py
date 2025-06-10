@@ -18,6 +18,16 @@ class Settings(BaseSettings):
     # Database Configuration
     APP_NAME: str = os.getenv("APP_NAME", "TKC APP")
     FRONTEND_URL: str = os.getenv("FRONTEND_URL", "TKC APP")
+
+    PORT: int = os.getenv('PORT', 8000)
+    SERVER_HOST: str = os.getenv('SERVER_HOST', "127.0.0.1")
+
+    @property
+    def WORKERS(self) -> int | None:
+        if os.getenv('WORKERS'):
+            return int(os.getenv('WORKERS'))
+        return None
+
     DB_CONNECTION: str = os.getenv("DB_CONNECTION", "sqlite").lower
     DB_HOST: str = os.getenv("DB_HOST", "localhost")
     DB_PORT: int = int(os.getenv("DB_PORT", 5432))
@@ -66,7 +76,6 @@ class Settings(BaseSettings):
     @property
     def ALLOW_HEADERS_LIST(self) -> list[str]:
         return [header.strip() for header in self.ALLOW_HEADERS.split(",") if header.strip()]
-
 
     # MAIL_SMTP
     MAIL_USERNAME: str = os.getenv("MAIL_USERNAME")
